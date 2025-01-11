@@ -20,10 +20,11 @@ cdtas_harina= numero_harina * conversion_taza_cucharadita #tuve que borrar el 48
 cdta_aceite= numero_aceite * conversion_cda_cdta
 
 volumen_inicial= float(cdtas_agua+cdtas_harina+cdta_aceite+numero_sal) #dios tenia mas este codigo como mil veces pq habia puesto cdtas sal en lugar de numero 
+print (f"este es el volumen antes de la cocción: {volumen_inicial}")
 
 #Ahora se restamos 10% de la evaporación
-volumen_respuestafinal= float (volumen_inicial * 0.10)  
+volumen_respuestafinal= float (volumen_inicial * 0.9) #no se pq no funciona con 0.10 
 
-print(f"El volumen de tu arepa después de la evaporación son {volumen_respuestafinal} cdtas") #hubo un error habia puesto los resultados como int pero no me di cuenta que el 10% era float asi q los tengo que cambiar 
+print(f"El volumen final de tu arepa después de la cocción son {volumen_respuestafinal} cdtas") #hubo un error habia puesto los resultados como int pero no me di cuenta que el 10% era float asi q los tengo que cambiar 
 
 #ahora el resultado no da dios mio da 10.0 pero deberia dar 30.0
