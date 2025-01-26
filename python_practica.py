@@ -154,7 +154,7 @@ def max_num(num_1, num_2, num_3): #establecemos que queremos 3 nums
 max_num(1, 10, 5)
 
 #Calc mejorada
-num_1= float(input("pon un numero: "))
+"""num_1= float(input("pon un numero: "))
 op= input("di que quieres (+,-,/,*) : ")
 num_2= float(input("pon un segundo numero: "))
 
@@ -167,4 +167,15 @@ elif op == "/":
 elif op == "*":
      print(num_1 * num_2)
 else:
-     print("esa opcion no esta ")
+     print("esa opcion no esta")"""
+
+#DICCIONARIOS (Key: la lista: value: lo q esta dentro d esa lista)
+monthConver = {
+    "Jan": "January", #key:value 
+    "Feb": "February",
+    "Mar": "March",
+}
+
+print(monthConver["Jan"]) #printea january
+print(monthConver.get("junio", "jun")) #para asignar a un key un valor sin estar en el diccionario
+
